@@ -1,0 +1,3 @@
+[submodule "Packages/Parsecs"]
+	path = Packages/Parsecs
+	url = https://github.com/mycelo1/Parsecs.git

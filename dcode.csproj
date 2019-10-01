@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <DefaultItemExcludes>Packages/**</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="global.json" />
+    <Content Remove="nuget.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PublishReadyToRunExclude Include="System.Collections.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="Packages\Parsecs\Parsecs.csproj" />
+  </ItemGroup>
+
+</Project>
